@@ -1,11 +1,11 @@
 # utils
 
-## Upgrade automatically
+## Upgrade automatically (wasmd)
 ```
-screen -S home -d -m bash -c "bash <(curl -s https://raw.githubusercontent.com/pulsar-node/utils/main/blockheight_upgrade.sh) -n oraichain -i Oraichain -t 29977900 -v v0.42.2 -b oraid"
+screen -dmS home bash -c "bash <(curl -s https://raw.githubusercontent.com/pulsar-node/utils/main/blockheight_upgrade.sh) -n wasmd -i Oraichain -t 42851595 -v v0.50.2 -b oraid"
 ```
 
-## Upgrade manually
+## Upgrade automatically (oraid)
 ```
-bash <(curl -s https://raw.githubusercontent.com/pulsar-node/utils/main/blockheight_upgrade/oraichain_upgrade.sh) v0.42.2 
+screen -dmS home bash -c "bash <(curl -s https://raw.githubusercontent.com/pulsar-node/utils/main/blockheight_upgrade.sh) -n oraid -i Oraichain -t 42751064 -v v0.42.4 -b oraid"
 ```
