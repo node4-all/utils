@@ -2,8 +2,9 @@
 
 # colorpath.sh
 NC=$(tput sgr0)			  # no color
-RED=$(tput setaf 1)		# red color
-CYAN=$(tput setaf 6)	# cyan color
+RED=$(tput setaf 1)
+CYAN=$(tput setaf 6)
+GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 
 function printLogo {
@@ -14,12 +15,20 @@ function printLine {
   echo "---------------------------------------------------------------------------------------"
 }
 
+function printRed {
+  echo -e "${RED}${1}${NC}"
+}
+
 function printCyan {
   echo -e "${CYAN}${1}${NC}"
 }
 
-function printRed {
-  echo -e "${RED}${1}${NC}"
+function printGreen {
+  echo -e "${GREEN}${1}${NC}"
+}
+
+function printYellow {
+  echo -e "${YELLOW}${1}${NC}"
 }
 
 function addToPath {
